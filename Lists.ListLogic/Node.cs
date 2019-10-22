@@ -6,13 +6,12 @@ namespace Lists.ListLogic
 {
     public class Node
     {
+        public Node Next { get; set; }
+        public Object DataObject { get; private set; }
+
         public Node(object dataObject)
         {
             DataObject = dataObject;
         }
-
-        public Node Next { get; set; }
-        
-        public Object DataObject { get; private set; }
     }
 }
